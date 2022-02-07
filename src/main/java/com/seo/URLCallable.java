@@ -31,7 +31,7 @@ public class URLCallable implements Callable<String> {
 
     @Override
     public String call() throws Exception {
-        System.out.println("CALLING:---->" + url);
+        System.out.println("CALLING:------>" + url);
         Document d = Jsoup.connect(url)
                 .userAgent("Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36")
                 .header("Accept-Language", "en-US")
