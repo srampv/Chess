@@ -66,6 +66,7 @@ public class ToolTipManager implements Runnable
   {
     // Find the Frame parent of currentComponent.
     Component top = currentComponent;
+    //this is bad logic need to refactor
     while (true)
     {
       Container parent = top.getParent();
